@@ -1,0 +1,12 @@
+{
+    "name": "money-manager-root",
+    "version": "1.0.0",
+    "description": "Root package for Money Manager App",
+    "scripts": {
+        "install-all": "npm install && npm install --prefix money-manager-backend && npm install --prefix money-manager-frontend",
+        "dev": "concurrently \"npm run dev --prefix money-manager-backend\" \"npm run dev --prefix money-manager-frontend\""
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}
